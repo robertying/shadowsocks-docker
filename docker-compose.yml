@@ -1,0 +1,9 @@
+services:
+  shadowsocks:
+    build: .
+    container_name: shadowsocks
+    restart: always
+    volumes:
+      - .:/app/custom
+    ports:
+      - "40000:8080"
